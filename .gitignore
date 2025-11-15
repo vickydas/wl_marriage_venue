@@ -1,0 +1,15 @@
+# Python Bytecode and Environment
+*.pyc
+__pycache__/
+.env
+
+# Database and Media
+db.sqlite3
+/media/
+
+# Virtual Environment
+venv/
+.venv/
+
+# Compiled Static Files (if you run collectstatic locally)
+/static/

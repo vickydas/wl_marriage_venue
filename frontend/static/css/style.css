@@ -1,0 +1,41 @@
+/* Reset / Base */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 0;
+}
+
+.jumbotron .btn {
+  background-color: #0056b3;
+  border: none;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+/* Utilities section on index */
+section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .jumbotron .display-4 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Venues - Railway Institute Booking</title>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">Railway Institute Booking</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="venues.html">Venues</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h2 class="mb-4">Our Venues</h2>
+    <div class="row">
+      <!-- Venue card: replicate for each venue -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="static/images/venue1.jpg"
+            class="card-img-top"
+            alt="Railway Institute BG Colony"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Railway Institute, BG Colony, NBQ</h5>
+            <p class="card-text">Rent: ₹2000 – ₹7000</p> <!-- this matches site info -->
+          </div>
+          <div class="card-footer text-center">
+            <a href="venue-detail.html?venue=1" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="static/images/venue2.jpg"
+            class="card-img-top"
+            alt="Railway Institute BNGN"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Railway Institute, BNGN</h5>
+            <p class="card-text">Rent: ₹2000 – ₹7000</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="venue-detail.html?venue=2" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other 3 venues as on target website -->
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 NFR Rangiya — Venue Booking</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="static/js/script.js"></script>
+</body>
+</html>
