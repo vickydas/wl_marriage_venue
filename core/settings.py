@@ -94,15 +94,15 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':'venue_booking',
-        'USER':'django_user',
-        'PASSWORD':'strong_password',
-        'HOST':'127.0.0.1',
-        'PORT':'3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'USER':'django_user',
+        # 'PASSWORD':'strong_password',
+        # 'HOST':'127.0.0.1',
+        # 'PORT':'3306',
+        # 'OPTIONS': {
+        #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        # },
     }
 }
 
@@ -175,6 +175,10 @@ DJOSER = {
 
 
 AUTH_USER_MODEL = 'users.User'
-STATIC_URL = BASE_DIR / "staticfiles"
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / "staticfiles"
+print(BASE_DIR)
+
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
