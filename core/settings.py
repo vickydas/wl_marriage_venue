@@ -69,7 +69,13 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://147.93.97.71:80",
     "http://147.93.97.71",
+    "http://allassamjobs.info",
+    "https://allassamjobs.info",
+    "http://www.allassamjobs.info",
+    "https://www.allassamjobs.info",
 ]
+
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'core.urls'
 
